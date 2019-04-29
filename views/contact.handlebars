@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Email Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="public/email.png" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet"  href="public/css/main.css">
+</head>
+<body class="container">
+    <div class="container z-depth-3 center-align col-xs-1 col-lg-6 cont_main">
+        <h3 class="formHeader hdr_text">Leave Us A Message.</h3>
+        {{msg_}}
+        <div class="seperator">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <form method="POST" action="send"  class="form" class="input-field">
+            <span  class="input-field infield_">
+                <i class="material-icons met_icon">person</i>
+                <input name="name" placeholder="Name" class="validate in_item_">
+            </span>
+            <span class="input-field infield_">
+                <i class="material-icons met_icon"></i>
+                <input name="subject" placeholder="Subject" class="validate in_item_">
+            </span>
+            <span class="input-field infield_">
+                <i class="material-icons met_icon" >email</i>
+                <input name="email" placeholder="Email" class="validate in_item_">
+            </span>
+            <span class="input-field infield_">
+                <i class="material-icons met_icon">create</i>
+                <textarea name="message" class="message_box_" placeholder="Your Message Here..."></textarea>
+            </span>
+            <button type="submit" class="waves-effect waves-light btn-large _submit_btn_">Submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900');
+
+html{
+    background: #f1f0ed;
+}
+body{
+    background: inherit;
+}
+.cont_main{
+    background: white;
+    padding-bottom: 30px;
+    padding: 0px;
+    padding-top: 30px;
+    margin-top: 100px;
+}
+
+.hdr_text{
+    color: #717171;
+    font-family: roboto;
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 4vh;
+    letter-spacing: -1px;
+}
+
+.message_box_{
+    height: 90px;
+    border: none;
+    border-bottom: solid 1px #c5c5c5;
+    transition: all 180ms ease-in 0s;
+    font-family: roboto;
+    outline: none;
+    
+}
+
+.message_icon{
+    top: -0.5px
+}
+
+.validate {
+    color: #3a3939;
+    border-bottom: 1px solid #969696;
+    transition: all 180ms ease-in 0s;
+    font-family: roboto
+}
+
+.validate:focus {
+    transition: all 180ms ease-in 0s;
+    padding-left: 10px;
+}
+
+.validate::placeholder {
+    color: grey
+}
+.message_box_::placeholder {
+    color: grey
+}
+
+.message_box_:focus {
+    transition: all 180ms ease-in 0s;
+    padding-left: 10px;
+    background: #eaeaea;
+    border-bottom: solid 2px #0d8e68;
+}
+
+._submit_btn_{
+    font-family: roboto;
+    text-transform: capitalize;
+    margin-top: 10%;
+    width: 100%;
+    background-color: #e01634;
+}
+
+form.form {
+    padding-top: 2%;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0;
+}
+
+.seperator {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 30% 60%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.line1 {
+    border-top: solid 2px #00c5a1;
+}
+
+.line2 {
+    border-top: solid 2px #ffaf1d;
+}
+
+.line3 {
+    border-top: solid 2px #f13863;
+}
+
+.infield_{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.in_item_{
+    height: 2.5rem;
+    padding-top: 0.5rem;
+}
+
+.met_icon{
+    color: #525151;
+    position: relative;
+    top: 1.5vh;
+}
+
+.mess_sent {
+    padding: 5%;
+    padding-top: 2%;
+    font-family: roboto;
+    font-weight: 500;
+}
+
+.sent_hdr {
+    font-family: roboto;
+    font-weight: 300;
+    color: #5a5a5a;
+    letter-spacing: -1px;
+    font-size: 4vh
+}
